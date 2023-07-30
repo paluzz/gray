@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <script type="module" src="./src/index.js"></script>
+    <script type="module" src="./src/copy.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>Traductor Morse</title>
+</head>
+
+<body>
+    <header class="title">
+        <h1 class="title">Traductor Codigo Morse</h1>
+    </header>
+
+
+    <label for="opciones">Elige una opción:</label>
+    <select id="opciones">
+        <option value="opcion1">Texto a Morse</option>
+        <option value="opcion2">Morse a Texto</option>
+    </select>
+    <br>
+    <label for="texto">Ingresa texto:</label>
+    <textarea type="text" id="texto"></textarea>
+    <br>
+    <div class="output">
+        <label>Traducción:</label>
+        <div for="salida" class="copy" id="copy">
+            <i id="icon" class="fa-regular fa-file"></i>
+            Copiar contenido
+        </div>
+        <textarea id="salida"></textarea>
+    </div>
+
+    <footer class="footer">
+        Creado por
+        <a href="https://github.com/paluzz" target="_blank" rel="noreferrer">Paluzz</a>
+        |
+
+        <a class="cafe" href="https://cafecito.app/damianp_" target="_blank" rel="noreferrer"> Invitame un cafecito
+            <i class="fa-solid fa-mug-saucer" style="color: #9a9898;"></i>
+        </a>
+
+    </footer>
+</body>
+
+</html>
