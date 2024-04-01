@@ -1725,3 +1725,19 @@ body>footer {
     color: inherit;
     outline: none;
 }
+
+.tabla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas de igual tamaño */
+    grid-gap: 10px;
+    /* Espacio entre celdas */
+}
+
+.celda {
+    /* Borde para las celdas */
+    padding: 10px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Alineación del contenido */
+}

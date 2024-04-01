@@ -1,8 +1,8 @@
-# Traductor de Código Morse
+# Convertidor de Binario a Gray
 
   
 
-Este es un traductor de código Morse implementado con Vanilla JavaScript. Permite convertir texto en lenguaje común a código Morse y viceversa.
+Este es un convertidor de codigos implementado con Vanilla JavaScript. Permite convertir texto en lenguaje común a código Morse y viceversa.
 
   
 
@@ -10,7 +10,7 @@ Este es un traductor de código Morse implementado con Vanilla JavaScript. Permi
 
   
 
-- Traducción bidireccional entre texto y código Morse.
+- Conversión bidireccional entre Numeros Binarios y Codigo Gray.
 
 - Interfaz de usuario simple e intuitiva.
 
@@ -22,11 +22,11 @@ Este es un traductor de código Morse implementado con Vanilla JavaScript. Permi
 
   
 
-1. Selecciona el modo Traduccion a Morse o Traduccion a texto.
+1. Selecciona el modo de Conversion.
 
-2. Ingresa el texto que deseas traducir en el campo "Texto a traducir".
+2. Ingresa el codigo a traducir en el campo "Texto a traducir".
 
-3. Para traducir código Morse a texto, usa el navegador para cambiar el modo.
+3. Para cambiar el modo de traducción, usa el navegador.
 
 4. El texto se traduce automaticamente!.
 
@@ -37,36 +37,21 @@ Este es un traductor de código Morse implementado con Vanilla JavaScript. Permi
   
   
 
-### Texto a traducir:
+### Texto en Binario:
 
   ```
-Hola Mundo
+100111
 ```
   
 
-### Resultado en código Morse:
+### Resultado en código Gray:
 
   
 ```
-.... --- .-.. .- -- ..- -. -.. ---
+110100
 ```
   
-  
-##
-### Morse a traducir:
-
-  
-```
--- --- .-. ... .
-```
-  
-
-### Resultado en texto:
-
-  
-```
-morse
-```
+ 
 
 ## Atribuciones
 
