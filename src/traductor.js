@@ -45,3 +45,31 @@ export function decodificadorMorse(morse) {
     return texto;
 }
 
+export function binaryToGray(binary) {
+    let gray = binary[0]; // El primer bit permanece igual
+    for (let i = 1; i < binary.length; i++) {
+        gray += xor(binary[i - 1], binary[i]);
+    }
+    return gray;
+}
+
+function xor(a, b) {
+    return a === b ? '0' : '1';
+}
+
+function flip(c) {
+    return c === '0' ? '1' : '0';
+}
+
+export function grayToBinary(gray) {
+    let binary = gray[0]; // El primer dígito del código Gray es igual al binario
+    for (let i = 1; i < gray.length; i++) {
+        if (gray[i] === '0') {
+            binary += binary[i - 1]; // Si el dígito Gray es '0', el dígito binario es igual al anterior
+        } else {
+            binary += flip(binary[i - 1]); // Si el dígito Gray es '1', el dígito binario es el inverso del anterior
+        }
+    }
+    return binary;
+}
+

@@ -1,4 +1,4 @@
-import { codificadorMorse, decodificadorMorse } from './traductor.js'
+import { binaryToGray, grayToBinary } from './traductor.js'
 // Obtener los elementos del DOM
 const opcionesDropdown = document.getElementById('opciones');
 const textoInput = document.getElementById('texto');
@@ -24,14 +24,14 @@ function mostrarSalida() {
 
     switch (opcionSeleccionada) {
         case 'opcion1':
-            textoIngresado = codificadorMorse(textoInput.value);
+            textoIngresado = binaryToGray(textoInput.value);
             salida = `${textoIngresado}`;
             if (textoIngresado === -1) {
                 salida = "";
             }
             break;
         case 'opcion2':
-            textoIngresado = decodificadorMorse(textoInput.value);
+            textoIngresado = grayToBinary(textoInput.value);
             salida = `${textoIngresado}`;
             break;
         default:
