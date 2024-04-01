@@ -57,7 +57,7 @@ Este es un convertidor de codigos implementado con Vanilla JavaScript. Permite c
 
   
 
-Este traductor de código Morse fue desarrollado por [Paluzz](https://github.com/paluzz), y está bajo licencia MIT. Puedes encontrar la version web [aquí](https://paluzz.github.io/morse/).
+Este traductor de código Morse fue desarrollado por [Paluzz](https://github.com/paluzz), y está bajo licencia MIT. Puedes encontrar la version web [aquí](https://paluzz.github.io/gray/).
 
 
   
